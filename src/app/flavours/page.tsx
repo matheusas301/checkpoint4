@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { Button } from "../../components/button/Button"
+import { Button } from "../../../components/button/Button"
 import { Layout } from "../../components/layout/Layout"
 import { routes } from "../../routes"
 import OrderContext from "../../contexts/OrderContext"
