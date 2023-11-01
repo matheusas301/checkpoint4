@@ -3,11 +3,16 @@ import { Logo } from "../logo/logo"
 import { ElementHeader, HeaderContainer } from "./header.style"
 
 export const Header = () => {
+
+  const onClick = (event) => {
+    
+  }
+
   return (
     <ElementHeader>
       <HeaderContainer>
         <Logo />
-        <Button>Login</Button>
+        <Button onClick={onClick}>Login</Button>
       </HeaderContainer>
     </ElementHeader>
   )
