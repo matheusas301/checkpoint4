@@ -4,7 +4,7 @@ import { ElementHeader, HeaderContainer } from "./header.style"
 
 export const Header = () => {
 
-  const onClick = (event) => {
+  const onClick = () => {
     
   }
 

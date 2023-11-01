@@ -1,16 +1,15 @@
 import { useContext, useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { Button } from "../../components/button/button"
-import { Layout } from "../../components/layout/Layout"
-import { routes } from "../../routes"
-import OrderContext from "../../contexts/OrderContext"
+import { Layout } from "../../components/layout/layout"
+import OrderContext from "../context/OrderContext"
 
-import Mussarela from "../../assets/pizza-flavours/mucarela.png"
-import ChickenWithCheese from "../../assets/pizza-flavours/frango-catupiry.png"
-import Margherita from "../../assets/pizza-flavours/margherita.png"
-import Lusa from "../../assets/pizza-flavours/portuguesa.png"
+// import Mussarela from "../../assets/pizza-flavours/mucarela.png"
+// import ChickenWithCheese from "../../assets/pizza-flavours/frango-catupiry.png"
+// import Margherita from "../../assets/pizza-flavours/margherita.png"
+// import Lusa from "../../assets/pizza-flavours/portuguesa.png"
 
-import { convertToCurrency } from "../../helpers/convertToCurrency"
+import { convertToCurrency } from "../helpers/convertToCurrency"
 
 import {
   FlavourActionWrapper,
@@ -20,8 +19,8 @@ import {
   FlavourCardPrice,
   FlavourCardTitle,
   FlavourContentWrapper,
-} from "./Flavours.styles"
-import { Title } from "../../components/title/Title"
+} from "./flavours.style"
+import { Title } from "../../components/title/title"
 
 export default function Flavours() {
   const navigate = useNavigate()

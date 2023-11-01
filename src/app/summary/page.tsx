@@ -1,10 +1,9 @@
 import { useContext, useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { Layout } from "../../components/layout/Layout"
-import { routes } from "../../routes"
-import OrderContext from "../../contexts/OrderContext"
-import { Title } from "../../components/title/Title"
-import { convertToCurrency } from "../../helpers/convertToCurrency"
+import { Layout } from "../../components/layout/layout"
+import OrderContext from "../context/OrderContext"
+import { Title } from "../../components/title/title"
+import { convertToCurrency } from "../helpers/convertToCurrency"
 import {
   SummaryActionWrapper,
   SummaryAmount,
@@ -14,8 +13,8 @@ import {
   SummaryImage,
   SummaryPrice,
   SummaryTitle,
-} from "./Summary.style"
-import { Button } from "../../components/button/Button"
+} from "./summary.style"
+import { Button } from "../../components/button/button"
 
 export default function Summary() {
   const navigate = useNavigate()
