@@ -1,6 +1,6 @@
 import { Button } from "../button/button"
-import { Logo } from "../logo/Logo"
-import { ElementHeader, HeaderContainer } from "./Header.style"
+import { Logo } from "../logo/logo"
+import { ElementHeader, HeaderContainer } from "./header.style"
 
 export const Header = () => {
   return (
