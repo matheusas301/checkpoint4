@@ -1,17 +1,16 @@
 import { useContext, useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { Layout } from "../../components/layout/Layout"
-import { Title } from "../../components/title/Title"
-import OrderContext from "../../contexts/OrderContext"
-import { routes } from "../../routes"
-import { Button } from "../../components/button/Button"
-import { convertToCurrency } from "../../helpers/convertToCurrency"
+import { Layout } from "../../components/layout/layout"
+import { Title } from "../../components/title/title"
+import OrderContext from "../context/OrderContext"
+import { Button } from "../../components/button/button"
+import { convertToCurrency } from "../helpers/convertToCurrency"
 import {
   CheckoutAction,
   CheckoutItem,
   CheckoutItemFlex,
   PaymentMethodGroup,
-} from "./Checkout.style"
+} from "./checkout.style"
 
 export default function Checkout() {
   const { pizzaOrder } = useContext(OrderContext)

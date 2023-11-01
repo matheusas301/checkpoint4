@@ -1,11 +1,10 @@
 import { useContext, useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { routes } from "../../routes"
-import { Button } from "../../components/button/Button"
-import { Layout } from "../../components/layout/Layout"
-import { Title } from "../../components/title/Title"
-import { RadioCard, SizeActionWrapper, SizeContentWrapper } from "./Sizes.style"
-import OrderContext from "../../contexts/OrderContext"
+import { Button } from "../../components/button/button"
+import { Layout } from "../../components/layout/layout"
+import { Title } from "../../components/title/title"
+import { RadioCard, SizeActionWrapper, SizeContentWrapper } from "./sizes.style"
+import OrderContext from "../context/OrderContext"
 
 export default function Sizes() {
   const navigate = useNavigate()

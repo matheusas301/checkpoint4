@@ -1,4 +1,4 @@
-import { ElementButton } from "./Button.style"
+import { ElementButton } from "./button.style"
 
 interface ButtonProps {
   children: React.ReactNode
@@ -18,4 +18,4 @@ export const Button = ({
     <ElementButton inverse={inverse} link={link} onClick={onClick} {...rest}>
       {children}
     </ElementButton>
-  )
+  )}
